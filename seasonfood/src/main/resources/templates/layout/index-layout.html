@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="UTF-8">
+<th:block th:fragment="setMain(content)">
+	<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/css/index.css" type="text/css" />
+<script type="text/javascript" src="/js/index.js"></script>
+<title>제철 음식</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="blind">header</h1>
+			<section>
+				<div class="dropdown" id="header">
+					<div>
+						<button class="button" onclick="window.location.href='scrap-page'">스크랩</button>
+					</div>
+					<div class="dropdown">
+						<button class="button" onclick="showProfile()">계정</button>
+						<div style="display: none" id="dropDownMenu">
+							<a class="dropDownItem" href="">로그인</a> <a class="dropDownItem" href="">아이디 찾기</a> <a
+								class="dropDownItem" href=""
+							>비밀번호 찾기</a> <a class="dropDownItem" href="">회원가입</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<main>
+			<section>
+				<h1 class="blind">main</h1>
+				<div id="main">
+					<th:block th:replace="${content}">
+					</th:block>
+			</section>
+		</main>
+		<footer>
+			<section>
+				<h1 class="blind">footer</h1>
+				<div id="footer"></div>
+			</section>
+		</footer>
+	</body>
+</html>

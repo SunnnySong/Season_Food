@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{/layout/index-layout :: setMain(~{this::content})}">
+	<th:block th:fragment="content">
+		<section>
+			<h1 class="blind">베너</h1>
+			<div class="container">
+				<div class="bannerArea">
+					<div>
+						<img class="banner" src="/images/banner/banner1.png" alt="banner" />
+					</div>
+					<div>
+						<img class="banner" src="/images/banner/banner2.png" alt="banner" />
+					</div>
+				</div>
+				<div id="pageMenu">
+					<dir>
+						<input class="button" type="button" src="" value="주별 추천">
+					</dir>
+					<div>
+						<input class="button" type="button" src="" value="계절별 추천">
+					</div>
+				</div>
+			</div>
+		</section>
+	</th:block>
+</th:block>
+</html>

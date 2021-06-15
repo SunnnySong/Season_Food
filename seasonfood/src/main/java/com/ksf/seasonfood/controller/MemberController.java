@@ -1,5 +1,6 @@
 package com.ksf.seasonfood.controller;
 
+<<<<<<< HEAD
 import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
 
@@ -60,3 +61,16 @@ public class MemberController {
 	
 	
 }// 클래스
+=======
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+@RequestMapping("/member")
+public class MemberController {
+
+    
+}
+>>>>>>> 5fae26779c7ef374a21f2d356d4920b6e01acc1a
